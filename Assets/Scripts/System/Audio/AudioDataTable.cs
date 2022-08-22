@@ -9,7 +9,7 @@ public struct AudioData
     public AudioClip clip;
 }
 
-[CreateAssetMenu(fileName = "AudioClipTable", menuName = "ScriptableObjeect/AudioClipTable")]
+[CreateAssetMenu(fileName = "AudioClipTable", menuName = "ScriptableObject/AudioClipTable")]
 public class AudioDataTable : ScriptableObject
 {
     public List<AudioData> list;

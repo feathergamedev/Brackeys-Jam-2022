@@ -21,13 +21,9 @@ public class Tester : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-            AudioManager.Instance.PlaySound(ESoundType.CLICK_BUTTON);
-
-        if (Input.GetKeyDown(KeyCode.W))
-            AudioManager.Instance.PlaySound(ESoundType.BOMB_EXPLODE);
-
         if (Input.GetKeyDown(KeyCode.E))
-            AudioManager.Instance.PlaySound(ESoundType.GET_SCORE);
+        {
+            DialogueManager.Instance.Test();
+        }
     }
 }
