@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        _currentMoveDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        _currentMoveDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
         _isMoving = (_currentMoveDirection != Vector2.zero);
         _currentVelocity = _currentMoveDirection * _moveSpeed;
 
